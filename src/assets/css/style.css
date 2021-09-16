@@ -1,0 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Faruma.ttf);
+  }
+
+  .dh{
+    font-family: myFirstFont;
+  }

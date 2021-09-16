@@ -1,0 +1,87 @@
+<div class="row">
+  <div class="col-md-12" >
+    <a data-bs-toggle="modal"  data-bs-target="#exampleModal" class="btn " style="position: relative;float: left;">
+    <i class="material-icons large " style="color: #08463b;
+      ">collections_bookmark</i></a>
+  </div>
+</div>
+
+  <!-- <input type="text"  style="   position: absolute;
+  left: 61px;"> -->
+<div class="row">
+    <div class="col-sm-12" style="padding: 10px;">
+        <h5 class="dh" style="font-weight: bolder;font-size: 24px;">
+         އެޖެންޑާ ކުރުން
+        </h5>
+    </div>
+    
+</div>
+ <div class="row">
+<div class="col-md-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title dh" id="exampleModalLabel" style="font-weight: bolder;">ދުވަހުގެ އެޖެންޑާ</h5>
+      
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="" class="dh">ސުރުހީ</label>
+            <input type="text" class="form-control dh" style="direction: rtl;" [(ngModel)]="title">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="" class="dh">ތަފްސީލް</label>
+            <textarea class="form-control dh" style="direction: rtl;"  [(ngModel)]="summery" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="" class="dh">ފައިލް</label>
+           <input (change)="onFileUpload($event)" type="file" class="form-control" name="" id="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="uploadAjenda()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
